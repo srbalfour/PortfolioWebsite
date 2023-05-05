@@ -53,6 +53,17 @@ button.accept-policy {
   line-height: inherit;
 }
 
+.icon-bar a {
+    text-align: center; /* Center-align text */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: black; /* White text color */
+    font-size: 36px; /* Increased font-size */
+}
+
+    .icon-bar a:hover {
+        background-color: #000; /* Add a hover color */
+    }
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
