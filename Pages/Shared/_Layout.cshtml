@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - Shanna Balfour</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/d66acc40f7.js" crossorigin="anonymous"></script>
 
     
 </head>
@@ -13,7 +14,7 @@
 
 
 
-<body>
+<body style="background-color:rgb(219, 219, 250)">
 
     <!--    <script>
     // Get the container element
@@ -39,9 +40,9 @@
     </script>-->
  
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" style="background-color: rgb(219, 219, 250)">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Shanna Balfour</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index"style="color:black"><b>Shanna Balfour</b></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,16 +53,16 @@
                     <ul class="navbar-nav flex-grow-1 justify-content-sm-end">                <!-- Uses bootstrap flex to left align the navbar-->
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-page="/Index" style = "font-weight:600; color: rgb(102, 91, 194)">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Background">Background</a>
+                            <a class="nav-link" asp-area="" asp-page="/Background" style="font-weight:600; color: rgb(102, 91, 194)">Background</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Projects">Projects</a>
+                            <a class="nav-link" asp-area="" asp-page="/Projects" style="font-weight:600; color: rgb(102, 91, 194)">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact Me</a>
+                            <a class="nav-link" asp-area="" asp-page="/Contact" style="font-weight:600; color: rgb(102, 91, 194)">Contact Me</a>
                         </li>
                     </ul>
 
@@ -81,9 +82,30 @@
  
 
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - Shanna Balfour - <a asp-area="" asp-page="/Index">Home</a> - <a asp-area="" asp-page="/Background">Background</a> - <a asp-area="" asp-page="/Projects">Projects</a> - <a asp-area="" asp-page="/Contact">Contact Me</a> 
+    <footer class="border-top footer text-muted" style="background-color: rgb(219, 219, 250)">
+
+        <div class="d-flex flex-sm-row d-flex align-items-sm-center">
+
+            <div class="container" style="color:black">
+                <p class="m-0">
+                    &copy; 2023 - Shanna Balfour - <a asp-area="" asp-page="/Index" style="color:rgb(102,91,194)">Home</a> - <a asp-area="" asp-page="/Background" style="color:rgb(102,91,194)">Background</a> - <a asp-area="" asp-page="/Projects" style="color:rgb(102,91,194)">Projects</a> - <a asp-area="" asp-page="/Contact" style="color:rgb(102,91,194)">Contact Me</a>
+
+                </p>
+            </div> 
+
+            <div class="icon-bar justify-content-sm-around flex-grow-1 d-flex align-items-sm-center d-flex bd-highlight">
+                <a href="#" class="p-2 flex-fill bd-highlight">
+                    <i class="fa-solid fa-envelope fa-2xs" style="color: #665bc2;"></i>
+                </a>
+                <a href="#" class="p-2 flex-fill bd-highlight">
+                    <i class="fa-brands fa-linkedin fa-2xs" style="color: #665bc2;"></i>
+                </a>
+                <a href="#" class="p-2 flex-fill bd-highlight">
+                    <i class="fa-brands fa-square-github fa-2xs" style="color: #665bc2;"></i>
+
+                </a>
+            </div>
+
         </div>
     </footer>
 
