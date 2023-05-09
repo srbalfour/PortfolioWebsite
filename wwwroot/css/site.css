@@ -95,3 +95,15 @@ body {
 /*Image Styles
 ---------------------------------------------------- */
 
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    height: 100%;
+}
+
+.intro-image {
+    align-self: center;
+}
+
