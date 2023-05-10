@@ -6,6 +6,7 @@ html{
 }
 body{
     line-height: normal;
+    height:100%;
 }
 
 a.navbar-brand {
@@ -14,6 +15,9 @@ a.navbar-brand {
   word-break: break-all;
 
 }
+
+
+
 
 
 /* Provide sufficient contrast against white background */
@@ -89,7 +93,6 @@ body {
     margin-bottom: 60px;
 }
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;

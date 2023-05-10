@@ -14,7 +14,7 @@
 
 
 
-<body style="background-color:rgb(219, 219, 250)">
+<body style="background-color:rgb(219, 219, 250);">
 
     <!--    <script>
     // Get the container element
@@ -39,8 +39,8 @@
     }
     </script>-->
  
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" style="background-color: rgb(219, 219, 250)">
+    <header style="right:0; left:0; position:fixed;">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3 sticky-top" style="top:0; background-color: rgb(219, 219, 250); ">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index"style="color:black"><b>Shanna Balfour</b></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -48,9 +48,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <div class="navbar-collapse collapse d-sm-inline-flex ">
 
-                    <ul class="navbar-nav flex-grow-1 justify-content-sm-end">                <!-- Uses bootstrap flex to left align the navbar-->
+                    <ul class="navbar-nav flex-grow-1 justify-content-end" style="">
+                        <!-- Uses bootstrap flex to right align the navbar-->
 
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-page="/Index" style = "font-weight:600; color: rgb(102, 91, 194)">Home</a>
@@ -82,7 +83,7 @@
  
 
 
-    <footer class="border-top footer text-muted" style="background-color: rgb(219, 219, 250)">
+    <footer class="border-top footer text-muted fixed-bottom" style="background-color: rgb(219, 219, 250)">
 
         <div class="d-flex flex-sm-row d-flex align-items-sm-center">
 
