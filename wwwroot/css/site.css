@@ -2,6 +2,11 @@
 for details on configuring this project to bundle and minify static web assets. */
 html{
     background-color: rgb(219, 219, 250);
+    line-height:normal;
+}
+body{
+    line-height: normal;
+    height:100%;
 }
 
 a.navbar-brand {
@@ -10,6 +15,9 @@ a.navbar-brand {
   word-break: break-all;
 
 }
+
+
+
 
 
 /* Provide sufficient contrast against white background */
@@ -85,7 +93,6 @@ body {
     margin-bottom: 60px;
 }
 .footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
@@ -103,7 +110,7 @@ body {
     height: 100%;
 }
 
-.intro-image {
+.intro-image, .background-image {
     align-self: center;
 }
 

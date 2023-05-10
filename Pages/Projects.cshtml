@@ -4,8 +4,416 @@
     ViewData["Title"] = "My Projects";
 }
 
-<div class="text-center">                                                             <!--Uses bootstrap utilities flex to centre all text in div-->
+<div class="text-center" style="padding-bottom:64px;">
+    <!--Uses bootstrap utilities flex to centre all text in div-->
     <h2>@ViewData["Title"]</h2>                                     <!--Uses bootstrap utilities text to format the title
                                                                                           Uses ASP.NET MVC to separate the key "Title" from the value the UI needs-->
+
+    <div class="featured-projects">
+        <div class="featured-heading d-flex flex-row">
+           
+            <p style="color: rgba(0, 0, 0, 0.4); font-size: 25px;">
+                <i class="fa-solid fa-star fa-sm" style="color: rgba(0, 0, 0, 0.4);"></i>
+                Featured
+            </p>
+        </div>
+
+        <div class="featured-cards d-flex flex-row justify-content-around">
+
+            <div class="featured-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                <div class="card-body">
+                    <h5 class="card-title">Project 1</h5>
+                    <p class="card-text">
+                        Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                    </p>
+                    <a href="#" class="card-link">
+                        <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="featured-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                <div class="card-body">
+                    <h5 class="card-title">Project 2</h5>
+                    <p class="card-text">
+                        Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                    </p>
+                    <a href="#" class="card-link">
+                        <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="featured-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                <div class="card-body">
+                    <h5 class="card-title">Project 3</h5>
+                    <p class="card-text">
+                        Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                    </p>
+                    <a href="#" class="card-link">
+                        <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="featured-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                <div class="card-body">
+                    <h5 class="card-title">Project 4</h5>
+                    <p class="card-text">
+                        Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                    </p>
+                    <a href="#" class="card-link">
+                        <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+       
+    </div>
+
+
+
+    <div class="personal-projects">
+
+        <div class="personal-heading d-flex flex-row">
+
+            <p style="color: rgba(0, 0, 0, 0.4); font-size: 25px; padding-top: 20px;">
+                <i class="fa-solid fa-laptop fa-sm" style="color: rgba(0, 0, 0, 0.4);"></i>
+                Extracurricular projects
+            </p>
+        </div>
+
+        <!--Column for group of personal projects-->
+        <div class="personal-project-group d-flex flex-column">
+
+            <!--First row of personal projects-->
+            <div class="personal-cards d-flex flex-row justify-content-around" style="margin-bottom:20px">
+
+                <!--personal project 1-->
+                <div class="personal-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!--personal project 2-->
+                <div class="personal-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!--personal project 3-->
+                <div class="personal-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!--personal project 4-->
+                <div class="personal-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 4</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--second row of personal projects-->
+            <div class="personal-cards d-flex flex-row justify-content-around" style="margin-bottom:20px">
+
+                <!--personal project 5-->
+                <div class="personal-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 5</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!--personal project 6-->
+                <div class="personal-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 6</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!--personal project 7-->
+                <div class="personal-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 7</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!--personal project 8-->
+                <div class="personal-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 8</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="university-projects">
+
+        <div class="unversity-heading d-flex flex-row">
+
+            <p style="color: rgba(0, 0, 0, 0.4); font-size: 25px; padding-top: 20px;">
+                <i class="fa-solid fa-graduation-cap fa-sm" style="color: rgba(0, 0, 0, 0.4)"></i>
+                University projects
+            </p>
+        </div>
+
+        <!--Column for group of university projects-->
+        <div class="university-project-group d-flex flex-column">
+
+            <!--first row of university projects-->
+            <div class="university-cards d-flex flex-row justify-content-around" style="margin-bottom:20px">
+
+                <!--project 1-->
+                <div class="university-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--project 2-->
+                <div class="university-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--project 3-->
+                <div class="university-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--project 4-->
+                <div class="university-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 4</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--second row of university projects-->
+            <div class="university-cards d-flex flex-row justify-content-around" style="margin-bottom:20px">
+
+                <!--project 5-->
+                <div class="university-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 5</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--project 6-->
+                <div class="university-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 6</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--project 7-->
+                <div class="university-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 7</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--project 8-->
+                <div class="university-card" style="width:16rem; border: solid 3px #665BC2;border-radius: 25px;">
+
+                    <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Project 8</h5>
+                        <p class="card-text">
+                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                        </p>
+                        <a href="#" class="card-link">
+                            <i class="fa-solid fa-angle-down" style="color: #665bc2;"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    
+
+
+
 </div>
 
