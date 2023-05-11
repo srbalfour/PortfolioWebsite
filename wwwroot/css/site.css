@@ -114,3 +114,11 @@ body {
     align-self: center;
 }
 
+.grid-container-2 {
+    display:grid;
+    grid-template-columns:auto auto;
+    grid-template-rows: auto auto auto;
+    height: 100%;
+}
+
+
