@@ -122,5 +122,8 @@ body {
     grid-gap: 0;
 }
 
-
+.badge {
+    margin-left: 0.2em;
+    margin-right: 0.2rem;
+}
 
