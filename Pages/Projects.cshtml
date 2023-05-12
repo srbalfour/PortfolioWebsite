@@ -2,6 +2,18 @@
 @model Website.Pages.ProjectsModel
 @{
     ViewData["Title"] = "My Projects";
+
+
+    var htmlTag = "#A7C7E7";
+    var cssTag = "#99c5c4";
+    var csTag = " #C1E1C1";
+    var unityTag = "#FAC898";
+    var sqlTag = "#F8C8DC";
+    var ardTag = "#FAA0A0";
+    var bsTag = "#5D7B9E";
+    var cTag = "#9EAC77";
+    var cppTag = "#C3E7C4";
+    var javaTag = "#90CAAC";
 }
 
 <div class="text-center">
@@ -44,15 +56,15 @@
 
                     </div>
 
-                    <h5 class="card-title">Project 1</h5>
+                    <h5 class="card-title">CookBook</h5>
 
                     <div class="end-paragraph" style="border-left:2px solid rgba(0,0,0, 0.5)">
                     </div>
 
                     <div class="tags" style="padding-bottom: 10px;">
-                        <span class="badge badge-pill" style="background-color:#FAA0A0;">HTML</span>
-                        <span class="badge badge-pill" style="background-color:#C1E1C1;">CSS</span>
-                        <span class="badge badge-pill" style="background-color:#A7C7E7;">C#</span>
+                        <span class="badge badge-pill" style="background-color:@htmlTag;">HTML</span>
+                        <span class="badge badge-pill" style="background-color:@cssTag;">CSS</span>
+                        <span class="badge badge-pill" style="background-color:@csTag;">C#</span>
                     </div>
 
                     
@@ -98,13 +110,13 @@
                     <div class="card-body">
                         <h5 class="card-title d-flex justify-content-center">Duck Roundup</h5>
                         <p class="card-text " align="center">
-                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                            This game is about freeing the ‘banana ducks’ from their enclosure, saving them from a hungry fox. <br />Ducks can be moved by nudging them with the mouse. <br /> Duck Roundup pushed us, as a team of three, to perfect our collisions to prevent the ducks from waltzing straight through the walls.
                         </p>
 
                         <div class="tags d-flex justify-content-center" style="padding-bottom: 10px;">
-                            <span class="badge badge-pill" style="background-color:#FAA0A0;">HTML</span>
-                            <span class="badge badge-pill" style="background-color:#C1E1C1;">CSS</span>
-                            <span class="badge badge-pill" style="background-color:#A7C7E7;">C#</span>
+                            <span class="badge badge-pill" style="background-color:@csTag">C#</span>
+                            <span class="badge badge-pill" style="background-color:@unityTag">Unity</span>
+
                         </div>
                         
                     </div>
@@ -140,13 +152,21 @@
                     <div class="card-body">
                     <h5 class="card-title d-flex justify-content-center">CookBook</h5>
                         <p class="card-text" align="center">
-                            Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
+                            The idea behind CookBook is to allow the user to store and share their recipes and to connect to their kitchen appliances to allow the user to easily preheat their oven to the specified temperature or boil their kettle using an arduino connected to hardware which was 3D printed.
                         </p>
 
-                        <div class="tags  d-flex justify-content-center" style="padding-bottom: 10px;">
-                            <span class="badge badge-pill" style="background-color:#FAA0A0;">HTML</span>
-                            <span class="badge badge-pill" style="background-color:#C1E1C1;">CSS</span>
-                            <span class="badge badge-pill" style="background-color:#A7C7E7;">C#</span>
+                        <div class="tags  d-flex flex-column" style="padding-bottom: 10px;">
+                        <div class="d-flex flex-row justify-content-center">
+                            <span class="badge badge-pill" style="background-color:@htmlTag">HTML</span>
+                            <span class="badge badge-pill" style="background-color:@cssTag">CSS</span>
+                            <span class="badge badge-pill" style="background-color:@bsTag">Bootstrap</span>
+                            </div>
+                        <div class="d-flex flex-row justify-content-center" style="margin-top:5px;">
+                            <span class="badge badge-pill" style="background-color:@ardTag">Arduino</span>
+                            <span class="badge badge-pill" style="background-color:@sqlTag">SQL</span>
+                        </div>
+                        
+                        
                         </div>
                         
                     </div>
@@ -181,7 +201,7 @@
             </div>
 
                 <!--personal project 5-->
-                <div class="personal-card" style="width:22rem; border: solid 3px #665BC2;border-radius: 25px;">
+                <div class="personal-card" style="width:20rem; border: solid 3px #665BC2;border-radius: 25px;">
 
                     <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
 
@@ -254,7 +274,7 @@
                     <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
 
                     <div class="card-body">
-                        <h5 class="card-title d-flex justify-content-center">Project 1</h5>
+                        <h5 class="card-title d-flex justify-content-center">Translator</h5>
                         <p class="card-text" align="center">
                             Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
                         </p>
@@ -274,7 +294,7 @@
                     <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
 
                     <div class="card-body">
-                        <h5 class="card-title d-flex justify-content-center">Project 2</h5>
+                        <h5 class="card-title d-flex justify-content-center">Valentines' Rush</h5>
                         <p class="card-text" align="center">
                             Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
                         </p>
@@ -294,7 +314,7 @@
                     <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
 
                     <div class="card-body">
-                        <h5 class="card-title d-flex justify-content-center">Project 3</h5>
+                        <h5 class="card-title d-flex justify-content-center">Physical Computing</h5>
                         <p class="card-text" align="center">
                             Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
                         </p>
@@ -321,7 +341,7 @@
                 <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
 
                 <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-center">Project 4</h5>
+                    <h5 class="card-title d-flex justify-content-center">Users and Interfaces</h5>
                     <p class="card-text" align="center">
                         Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
                     </p>
@@ -341,7 +361,7 @@
                     <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
 
                     <div class="card-body">
-                        <h5 class="card-title d-flex justify-content-center">Project 5</h5>
+                        <h5 class="card-title d-flex justify-content-center">Manchester Baby</h5>
                         <p class="card-text" align="center">
                             Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
                         </p>
@@ -361,7 +381,7 @@
                     <img class="card-img-top" src="~/Images/cat1.jpg" alt="Card Image cat" style="border-top-left-radius: 22px; border-top-right-radius: 22px;">
 
                     <div class="card-body">
-                        <h5 class="card-title d-flex justify-content-center">Project 6</h5>
+                        <h5 class="card-title d-flex justify-content-center">Object Oriented Programming</h5>
                         <p class="card-text" align="center">
                             Cat ipsum dolor sit amet, sit in window and stare oooh, a bird, yum i bet my nine lives on you-oooo-ooo-hooo.
                         </p>
