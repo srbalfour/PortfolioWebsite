@@ -1,7 +1,40 @@
 ﻿@page
-@model Website.Pages.ContactModel
 @{
     ViewData["Title"] = "Contact Me";
+
+    var IsPost = false;
+    string name = "";
+    string email = "";
+    string message = "";
+
+    //  Validation.RequireField("name", "Name is required.");
+    // Validation.RequireField("email", "Email address is required.");
+    //  Validation.RequireField("message", "Message is required.");
+
+    if (IsPost)
+    {
+        name = Request.Form["name"];
+        email = Request.Form["email"];
+        message = Request.Form["message"];
+
+        // if (Validation.IsValid())
+        // {
+        <text>
+                You entered: <br />
+                Name: @name <br />
+                Email: @email <br />
+                Message: @message <br />
+        </text>
+
+
+        Console.WriteLine(@name);
+
+        Console.WriteLine(@email);
+
+        Console.WriteLine(@message);
+    // }
+     }
+
 }
 
 <div class="text-center" style="">
@@ -18,19 +51,19 @@
         <form method="post">
         <fieldset>
                 <div class="form-group">
-                    <input type="text" class="form-control" value="" id="name" placeholder="Enter Your Name" style="width: 100%; border-radius: 5px; border: solid 3px #665BC2; font-size:25px; margin-bottom: 40px;" ;>
+                    <input type="text" class="form-control" value="@name" id="name" placeholder="Enter Your Name" style="width: 100%; border-radius: 5px; border: solid 3px #665BC2; font-size:25px; margin-bottom: 40px;" ;>
                 </div>
 
                 <div class="form-group">
-                    <input type="email" class="form-control" value="" id="email" placeholder="Enter Your Email Address" style="width: 100%; border-radius: 5px; border: solid 3px #665BC2; font-size:25px; margin-bottom: 40px;" ;>
+                    <input type="email" class="form-control" value="@email" id="email" placeholder="Enter Your Email Address" style="width: 100%; border-radius: 5px; border: solid 3px #665BC2; font-size:25px; margin-bottom: 40px;" ;>
                 </div>
 
                 <div class="form-group">
-                    <textarea class="form-control" id="message" rows="7" placeholder="Enter Your Message Here" style="width: 100%; border-radius: 5px; border: solid 3px #665BC2; font-size:25px; margin-bottom: 20px; "></textarea>
+                    <textarea class="form-control" value="@message" id="message" rows="7" placeholder="Enter Your Message Here" style="width: 100%; border-radius: 5px; border: solid 3px #665BC2; font-size:25px; margin-bottom: 20px; "></textarea>
                 </div>
 
 
-                <button type="submit" class="btn btn-outline-light" style="border-radius: 5px; color: #665BC2; border: solid 3px #665BC2; font-weight:600; margin-bottom: 20px; ">Submit</button>
+                <button type="submit" class="btn btn-outline-light" style="border-radius: 5px; color: #665BC2; border: solid 3px #665BC2; font-weight:600; margin-bottom: 20px; " >Submit</button>
         
         </fieldset>
     </form>
