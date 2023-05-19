@@ -23,6 +23,7 @@ a.navbar-brand {
 
 
 
+
 /* Provide sufficient contrast against white background */
 a:link {
     color: rgb(102,91, 194);
@@ -204,6 +205,7 @@ body {
     border: 1px;
     display: flex;
     flex-flow: row wrap;
+    z-index: 1!important;
 }
 
 #content > .group .flip-card {
