@@ -3,6 +3,9 @@ on:
   push:
     branches:
     - ShannaEdits
+permissions:
+  id-token: write
+  contents: read
 env:
   AZURE_WEBAPP_NAME: shannaraebalfour
   AZURE_WEBAPP_PACKAGE_PATH: .\published
