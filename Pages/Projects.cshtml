@@ -4,17 +4,19 @@
     ViewData["Title"] = "My Projects";
 
 
-    var htmlTag = "#A7C7E7";
-    var cssTag = "#99c5c4";
-    var csTag = " #C1E1C1";
-    var unityTag = "#FAC898";
-    var sqlTag = "#F8C8DC";
-    var ardTag = "#FAA0A0";
-    var bsTag = "#5D7B9E";
-    var cTag = "#9EAC77";
-    var javaTag = "#90CAAC";
-    var mlTag = "#ff7661";
-    var jsTag = "#D4FAFA";
+    var htmlTag = "#A7C7E7";        //html
+    var cssTag = "#99c5c4";         //css
+    var csTag = " #C1E1C1";         //c#
+    var unityTag = "#FAC898";       //unity
+    var sqlTag = "#F8C8DC";         //sql
+    var ardTag = "#FAA0A0";         //arduino
+    var bsTag = "#5D7B9E";          //bootstrap
+    var cTag = "#9EAC77";           //C
+    var javaTag = "#90CAAC";        //java
+    var mlTag = "#ff7661";          //matlab
+    var jsTag = "#D4FAFA";          //javascript
+    var rnTag = "#FFFAA0";          //react native
+    var tsTag = "#fe8ac0";         //typescript
 }
 
 <div class="text-center">
@@ -103,7 +105,7 @@
 
         <p style="color: rgba(0, 0, 0, 0.4); font-size: 25px; padding-top: 20px; padding-left:2.5%">
             <i class="fa-solid fa-laptop fa-sm" style="color: rgba(0, 0, 0, 0.4);"></i>
-            Hackathon projects
+            My Projects
         </p>
     </div>
 
@@ -112,6 +114,29 @@
     <div id="content">
         <div class="group">
 
+            <div class="flip-card d-flex bd-highlight" style="border-radius: 25px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="border-radius: 25px">
+                        <img src="~/Images/Yellow-Car.png" alt="Yellow Car" style=" border-radius: 22px;" class="project-image">
+                    </div>
+
+                    <div class="flip-card-back" style="border-radius: 25px;">
+                        <h4 style="padding-bottom: 5px;">Yellow Car</h4>
+                        <p class="flip-content">
+                            I am currently creating a mobile app using react native which will be used to keep track of how many points each player has in a game of yellow car. The app will also feature a counter which can be used outside of the game. <br />
+                            This app was inspired by a need to keep track of a daily game of yellow car ongoing in my life.
+                            <br /> Look at this app on GitHub <a href="https://github.com/srbalfour/YellowCarApp" target="_blank">here!</a>
+
+                        </p>
+
+                        <div class="tags d-flex justify-content-center" style="padding-bottom: 10px;">
+                            <span class="badge badge-pill" style="background-color:@rnTag">React Native</span>
+                            <span class="badge badge-pill" style="background-color:@tsTag">Typescript</span>
+                            <span class="badge badge-pill" style="background-color:@jsTag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="flip-card d-flex bd-highlight" style="border-radius: 25px;">
                 <div class="flip-card-inner">
